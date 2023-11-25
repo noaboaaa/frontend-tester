@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #FFD700; 
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .salon-name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: #333;
+    margin: 0 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav button:hover {
+    color: #fff;
+}
+
+/* Main Content */
+main {
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.welcome h2 {
+    font-size: 3rem;
+    color: #FF6347; 
+    margin-bottom: 20px;
+}
+
+.welcome p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.book-now-btn {
+    background-color: #969896; 
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-now-btn:hover {
+    background-color: #228B22; 
+}
+
+/* Forms */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+form label, form button[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #5D3F6A;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header .salon-name, .welcome h2, nav button {
+        font-size: 1.5rem;
+    }
+
+    .welcome p {
+        font-size: 1.1rem;
+    }
+
+    nav button {
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}
+
+/* Specific Sections */
+.info-section, .opening-hours, .meet-us-page {
+    text-align: center;
+    padding: 20px;
+    margin: 40px 20px;
+}
+
+.info-section h2, .opening-hours h2 {
+    font-size: 2.5rem;
+    color: #FF6347;
+    margin-bottom: 20px;
+}
+
+.opening-hours {
+    background-color: #e1d231; 
+    border-radius: 1px;
+}
+
+.team-member img {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.team-member h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    color: #555;
+}
